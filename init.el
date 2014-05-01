@@ -19,6 +19,7 @@
 
 (defconst important-packages
   '(
+    color-theme-sanityinc-tomorrow
     clojure-mode
     exec-path-from-shell
     ido-ubiquitous
@@ -28,7 +29,8 @@
     org
     paredit
     puppet-mode
-    smex)
+    smex
+    )
   "packages to ensure are always present on startup")
 
 (require 'cl-lib)
@@ -114,3 +116,6 @@
  '(geiser-racket-binary "~/racket/bin/racket")
  '(markdown-command "kramdown")
  '(org-agenda-files (quote ("~/org/todo.org"))))
+
+;; colour theme
+(load-theme 'sanityinc-tomorrow-night t)
