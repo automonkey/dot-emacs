@@ -119,3 +119,6 @@
 
 ;; colour theme
 (load-theme 'sanityinc-tomorrow-night t)
+
+;; menu bar
+(column-number-mode t)
