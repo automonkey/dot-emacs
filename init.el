@@ -29,6 +29,7 @@
     org
     paredit
     puppet-mode
+    rainbow-delimiters
     smex
     )
   "packages to ensure are always present on startup")
@@ -83,6 +84,8 @@
 ;; haskell stuff
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
+;; general code
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 ;; set up path
 (exec-path-from-shell-initialize)
