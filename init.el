@@ -25,6 +25,7 @@
     ido-ubiquitous
     magit
     markdown-mode
+    midje-mode
     nrepl
     org
     paredit
